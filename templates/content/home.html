@@ -1,0 +1,13 @@
+<h1>{{ nm.name }}</h1>
+<input type="text" ng-model="nm.name"></input>
+
+<h2>{{ headlines }}</h2>
+
+<p ng-repeat="object in objects">
+		naam: {{ object.naam }}</br>
+		punten: {{ object.points }}
+</p>
+
+<p>zo ziet de structuur eruit (beetje het API idee van objecten)</p>
+<pre>{{ objects | json }}</pre>
+
